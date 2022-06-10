@@ -20,9 +20,8 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn_speak= (Button) findViewById(R.id.btn_speak);
-        txtSpeak= (EditText) findViewById(R.id.Edt_txt);
-
+        btn_speak=  findViewById(R.id.btn_speech);
+        txtSpeak=  findViewById(R.id.Edt_txt);
         btn_speak.setOnClickListener( this);
         textToSpeech=new TextToSpeech(getBaseContext(),this);
         textToSpeech.setLanguage(Locale.ENGLISH);
